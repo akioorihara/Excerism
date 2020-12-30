@@ -1,14 +1,16 @@
+
 def convert(number):
     if (number % 3):
-        pass
+        return "Pling"
     elif (number % 5):
-        pass
-    elif( number % 7):
-        pass
+        return "Plang"
+    elif(number % 7):
+        return "Plong"
     else:
-        pass
+        return "not mod by 3, 5, or 7"
         raise Exception("Exception error here")
 
 
-x = input("Raindrop number: ")
-convert()
+x = int(input("Raindrop number: "))
+# xprint(type(x))
+print(convert(x))
