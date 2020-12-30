@@ -1,3 +1,8 @@
 def two_fer(name):
-    pass
+    if name is None:
+        return "One for you, one for me."
+    else:
+        return "One for ", name, ", and one for me."
 
+x = input()
+two_fer(x)
