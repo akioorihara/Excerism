@@ -1,4 +1,5 @@
 
+
 def convert(number):
     if (number % 3):
         return "Pling"
@@ -8,9 +9,7 @@ def convert(number):
         return "Plong"
     else:
         return "not mod by 3, 5, or 7"
-        raise Exception("Exception error here")
-
-
+     
 x = int(input("Raindrop number: "))
 # xprint(type(x))
 print(convert(x))
