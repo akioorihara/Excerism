@@ -2,7 +2,7 @@
 
 def two_fer(name=''):
     if name == '': 
-        name = "you"
+        name ="you"
     return f"One for {name}, one for me."
 
 x = input("Enter your name : ")
