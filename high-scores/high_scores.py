@@ -8,8 +8,9 @@ def personal_best(scores):
     return scores[-1]
 
 def personal_top_three(scores):
-    pass
     #sort and then list the last three of the list 
+    scores.sort()
+    
 
 
 scores = []
@@ -22,3 +23,4 @@ print("")
 # scores.append(x)
 print("The late number is : ", latest(scores))
 print("The highest number is : ", personal_best(scores))
+print("The top three numbers are : ", personal_top_three(scores))
