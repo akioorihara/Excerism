@@ -19,8 +19,8 @@ for i in range(0,9):
     y = (random.randint(1,10))
     scores.insert(i,y) 
     print(scores[i], end=" ")
-# print("")
-x = int(input("Enter a value : "))
+
+x = int(input("| Enter a value : "))
 scores.append(x)
 print("The late number is : ", latest(scores))
 print("The highest number is : ", personal_best(scores))
