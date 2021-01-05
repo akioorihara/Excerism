@@ -9,7 +9,8 @@ def convert(number):
     if(number % 7 == 0):
         a += "Plong"
     if(a is ""):
-        return number
+        # print(type(str(number)))
+        return str(number)
     
     return a
      
