@@ -8,6 +8,7 @@ def is_isogram(string):
     for u in range(len(string)):
         for i in range(len(string)):
             if u == i:
+                print(u, string[u], string[i])
                 break
                 #skip this loop and no need to check 
             if string[u] == string[i]:
@@ -15,14 +16,14 @@ def is_isogram(string):
                     isogram += 1
     
     print(isogram)
-    return isogram
+    return bool(isogram)
 
 test        = "backgroud"
 testTwo     = "marioandpeach"
 testThree   = "six-year-old"
 testFour    = "six-year-six"
-is_isogram(test)
+# is_isogram(test)
 is_isogram(testTwo)
-is_isogram(testThree)
-is_isogram(testFour)
+# is_isogram(testThree)
+# is_isogram(testFour)
 
