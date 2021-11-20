@@ -6,12 +6,19 @@
 
 def ComputeSum():
 
-    List = []
+    calc = 1
+    List = [] 
     size = input() 
-    #Split 
+
+    for i in range(int(size)):
+        inputValue = input()
+        for x in inputValue:
+            calc *= int(x)
+        List.append(calc)
         
+        calc = 1
     
     return sum(List)
 
 
-ComputeSum()
+print(ComputeSum())

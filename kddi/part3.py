@@ -3,17 +3,16 @@
 #The third line contains the second list of integers separated by single spaces. The elements of the resulting vertical list must be printed one per line/ 
 
 
-
 def MergeLists():
 
     list1 = []
-    size = input().split()
+    ListSizes = input().split()
 
-    for i in range(len(size)):
+    for i in range(len(ListSizes)):
         value = input().split()
         list1.extend(value)
     list1.sort(reverse=True)
-
+    
     print("\n")
     for i in list1:
         print(i)

@@ -15,7 +15,7 @@ def FindMedian():
     value = value.split()
     value.sort()
 
-    print(value[median-1])
+    return value[median-1]
 
-FindMedian()
+print(FindMedian())
 
